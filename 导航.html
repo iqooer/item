@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>网址导航官网</title>
+    <style>
+        /* 全局初始化 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            font-family: "微软雅黑", sans-serif;
+            padding: 40px;
+        }
+
+        /* 头部区域 */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        .search {
+            width: 500px;
+            height: 40px;
+            padding: 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        /* 导航容器 */
+        .nav-box {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* 分类标题 */
+        .title {
+            font-size: 18px;
+            margin: 25px 0 15px;
+            color: #444;
+        }
+
+        /* 链接卡片容器 —— 弹性布局 */
+        .link-list {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* 单个网址卡片 */
+        .link-item {
+            background: #fff;
+            width: 120px;
+            height: 80px;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 80px;
+            box-shadow: 0 2px 8px #ddd;
+        }
+
+        .link-item a {
+            text-decoration: none;
+            color: #333;
+            font-size: 15px;
+        }
+
+        .link-item:hover {
+            background-color: #409eff;
+        }
+
+        .link-item:hover a {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <h1>我的网址导航</h1>
+        <input class="search" placeholder="请输入搜索内容...">
+    </div>
+
+    <!-- 导航主体 -->
+    <div class="nav-box">
+        <!-- 学习类 -->
+        <div class="title">📚 学习网站</div>
+        <div class="link-list">
+            <div class="link-item"><a href="https://www.baidu.com">百度</a></div>
+            <div class="link-item"><a href="https://www.csdn.net">CSDN</a></div>
+            <div class="link-item"><a href="https://www.bilibili.com">B站</a></div>
+        </div>
+
+        <!-- 购物类 -->
+        <div class="title">🛒 购物网站</div>
+        <div class="link-list">
+            <div class="link-item"><a href="#">淘宝</a></div>
+            <div class="link-item"><a href="#">京东</a></div>
+            <div class="link-item"><a href="#">拼多多</a></div>
+        </div>
+
+        <!-- 工具类 -->
+        <div class="title">🛠️ 常用工具</div>
+        <div class="link-list">
+            <div class="link-item"><a href="#">网盘</a></div>
+            <div class="link-item"><a href="#">翻译</a></div>
+            <div class="link-item"><a href="#">文档</a></div>
+        </div>
+    </div>
+</body>
+</html>
